@@ -1,0 +1,56 @@
+{
+  "name": "@profullstack/encrypt",
+  "version": "0.1.0",
+  "description": "Quantum-resistant encrypt/decrypt: qrypt.chat's ML-KEM-1024 + HKDF-SHA-256 + ChaCha20-Poly1305 by default, with room for more algorithms. Library, CLI and MCP server.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "pfencrypt": "./bin/pfencrypt.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "encryption",
+    "post-quantum",
+    "ml-kem",
+    "kyber",
+    "chacha20-poly1305",
+    "hkdf",
+    "qrypt",
+    "e2ee",
+    "mcp"
+  ],
+  "author": "Profullstack, Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profullstack/encrypt.git"
+  },
+  "homepage": "https://github.com/profullstack/encrypt#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^2.0.0",
+    "@noble/hashes": "^2.0.0",
+    "mlkem": "^2.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
