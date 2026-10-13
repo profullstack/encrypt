@@ -16,6 +16,14 @@ dependencies (`mlkem`, `@noble/ciphers`, `@noble/hashes`).
 ## Install
 
 ```sh
+curl -fsSL https://raw.githubusercontent.com/profullstack/encrypt/main/install.sh | sh
+```
+
+That installs the `pfencrypt` command under `~/.local` (no root; it brings its own Node
+if yours is older than 20). Remove it with `sh ~/.local/share/encrypt/uninstall.sh`.
+For the library, add it to your project:
+
+```sh
 npm i @profullstack/encrypt
 ```
 
